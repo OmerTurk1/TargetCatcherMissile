@@ -39,6 +39,7 @@ $$
 
 * **`calculations.py`**: Contains analytical geometry and linear algebra functions responsible for computing discriminants, time roots, and trajectory vectors.
 * **`visualize.py`**: The core driver script that injects pseudo-random noise/turns (`max_turn_angle`) into the target's path, executes the tracking loop, and renders the dynamic simulation interface.
+* **`hit_animation.gif`**: The example showcase of the output simulation. GIF is produced by using only 1/5 of the original frames, reducing the size and build time. It is open to view from the files.
 
 ## 🚀 Getting Started
 
@@ -57,3 +58,6 @@ Upon running, the simulation window renders the following real-time elements:
 - 🟩 Green Dashed Line / "X" Marker: The instantaneously predicted intercept point ($B$).
   You can observe this point dynamically shift whenever the target executes a turn.
 - 🔺 Red Triangle: The static launcher base station ($L$) where the projectile originated.
+
+## License
+This project is my own original work, and I do not consent to any commercial or profitable use of it. Permission to use the code, observations, and outputs is granted solely to individuals conducting academic or personal research.
