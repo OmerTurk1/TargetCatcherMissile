@@ -1,5 +1,7 @@
 # Dynamic Target Tracking and Interception Simulation
-
+<p align="center">
+  <img src="hit_animation.gif" alt="Hit Animations" width="400"/>
+</p>
 This project is a 2D guidance and tracking system simulation that continuously calculates instantaneous intercept points to track and neutralize a dynamic target exhibiting non-linear maneuvers (random angular deviations).
 
 Rather than simply aiming at the target's instantaneous position, the system iteratively solves a quadratic vector equation at each simulation step ($dt$) to project the optimal intercept trajectory for a constant-speed projectile (launcher).
