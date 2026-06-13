@@ -37,11 +37,12 @@ for step in range(max_steps):
     
     # 2. INSTANTANEOUS COLLISION PREDICTION (Guidance System)
     B, M_d, t_st = calc_collision(P, V, bullet_pos, bullet_speed)
+    print(M_d)
         
     prediction_history.append(B.copy())
     
     # 3. BULLET MOVEMENT: Advance towards the calculated direction
-    bullet_pos += M_d * dt
+    bullet_pos += M_d * bullet_speed * dt
     bullet_history.append(bullet_pos.copy())
     
     # 4. COLLISION CHECK

@@ -25,7 +25,7 @@ def calc_collision(P, V, L, M):
     
     t_st = min(valid_times)
     B = P + t_st * V
-    M_d = (B - L) / t_st
+    M_d = (B - L) / np.linalg.norm(B-L)
 
     return B, M_d, t_st
 
@@ -34,6 +34,6 @@ def fallback_direct_aim(D,P,M):
     if distance < 1e-8:
         return P, np.zeros_like(P), 0.0
     
-    M_d = (D / distance) * M 
+    M_d = D / distance 
     t_st = distance / M
     return P, M_d, t_st
